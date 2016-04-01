@@ -1,0 +1,28 @@
+<ion-view view-title="Schedule">
+  <ion-content>
+    <h1 class="text-center">{{day.Name}} on {{day.Day}}</h1>
+    <div class = "list card" ng-repeat="activity in activities">
+      <div class="item item-icon-left">
+        <i class="icon ion-at"></i>
+        {{activity.fields.Name}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-pound"></i>
+        {{activity.fields.Description}}
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-clock"></i>
+        {{activity.fields.Hour}}
+      </div>
+    </div>
+
+    <!--<div class="row">
+      <div class="col" style="font-weight: bold">Hour</div>
+      <div class="col col-75" style="font-weight: bold">Name</div>
+    </div>
+    <div class="row" ng-repeat="activity in activities">
+      <div class="col">{{activity.fields.Hour}}</div>
+      <div class="col col-75">{{activity.fields.Name}}</div>
+    </div>-->
+  </ion-content>
+</ion-view>
