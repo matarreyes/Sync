@@ -1,0 +1,11 @@
+<ion-view view-title="Agenda">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="day in days" class = "item-thumbnail-left" href="#/app/playlists/{{day.id}}">
+        <img ng-src="data:image/jpeg;base64,{{day.fields.encodedImage}}"/>
+        <h2>{{day.fields.Name}}</h2>
+        <h4>{{day.fields.Day}}</h4>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
